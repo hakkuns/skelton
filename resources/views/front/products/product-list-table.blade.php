@@ -27,9 +27,11 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                             <a href="{{ route('front.get.product', [$cartItem->product->slug]) }}" class="hover-border">
                                 @if(isset($cartItem->cover))
-                                    <img src="{{$cartItem->cover}}" alt="{{ $cartItem->name }}" class="img-responsive img-thumbnail">
+                                    <img src="{{$cartItem->cover}}" alt="{{ $cartItem->name }}" class="img-responsive img-thumbnail"
+                                    style="max-width: 100%">
                                 @else
-                                    <img src="https://placehold.it/120x120" alt="" class="img-responsive img-thumbnail">
+                                    <img src="https://placehold.it/120x120" alt="" class="img-responsive img-thumbnail"
+                                    style="max-width: 100%">>
                                 @endif
                             </a>
                         </div>

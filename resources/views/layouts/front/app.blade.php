@@ -38,6 +38,10 @@
             color: #777777;
         }
 
+        .img-thumbnail {
+            width: 24%;
+        }
+
     </style>
 
 </head>
