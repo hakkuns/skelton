@@ -325,4 +325,14 @@ class ProductRepository extends BaseRepository implements ProductRepositoryInter
     {
         return $this->model->brand;
     }
+
+    /**
+     * Sync the categories
+     *
+     * @param array $params
+     */
+    public function syncCategories(array $params)
+    {
+        $this->model->categories()->sync($params);
+    }
 }

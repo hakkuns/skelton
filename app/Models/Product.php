@@ -12,21 +12,6 @@ use Illuminate\Support\Collection;
 
 class Product extends Model implements Buyable
 {
-    public const MASS_UNIT = [
-        'OUNCES' => 'oz',
-        'GRAMS' => 'gms',
-        'POUNDS' => 'lbs'
-    ];
-
-    public const DISTANCE_UNIT = [
-        'CENTIMETER' => 'cm',
-        'METER' => 'mtr',
-        'INCH' => 'in',
-        'MILIMETER' => 'mm',
-        'FOOT' => 'ft',
-        'YARD' => 'yd'
-    ];
-
     /**
      * The attributes that are mass assignable.
      *

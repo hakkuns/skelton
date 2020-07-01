@@ -109,8 +109,6 @@ class ProductController extends Controller
         return view('admin.products.create', [
             'categories' => $categories,
             'brands' => $this->brandRepo->listBrands(['*'], 'name', 'asc'),
-            'default_weight' => env('SHOP_WEIGHT'),
-            'weight_units' => Product::MASS_UNIT,
             'product' => new Product
         ]);
     }
@@ -189,10 +187,7 @@ class ProductController extends Controller
             'attributes' => $this->attributeRepo->listAttributes(),
             'productAttributes' => $productAttributes,
             'qty' => $qty,
-            'brands' => $this->brandRepo->listBrands(['*'], 'name', 'asc'),
-            'weight' => $product->weight,
-            'default_weight' => $product->mass_unit,
-            'weight_units' => Product::MASS_UNIT
+            'brands' => $this->brandRepo->listBrands(['*'], 'name', 'asc')
         ]);
     }
 

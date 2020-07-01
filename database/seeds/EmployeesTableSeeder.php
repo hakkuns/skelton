@@ -8,7 +8,7 @@ class EmployeesTableSeeder extends Seeder
     public function run()
     {
         $employee = factory(Employee::class)->create([
-            'email' => 'test@example.com'
+            'email' => 'admin@example.com'
         ]);
     }
 }

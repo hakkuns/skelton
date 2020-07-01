@@ -38,7 +38,7 @@
                         <div class="form-group">
                             <label for="price">Price <span class="text-danger">*</span></label>
                             <div class="input-group">
-                                <span class="input-group-addon">PHP</span>
+                                <span class="input-group-addon">{{ config('cart.currency') }}</span>
                                 <input type="text" name="price" id="price" placeholder="Price" class="form-control" value="{{ old('price') }}">
                             </div>
                         </div>
@@ -54,7 +54,6 @@
                         </div>
                         @endif
                         @include('admin.shared.status-select', ['status' => 0])
-                        @include('admin.shared.attribute-select', [compact('default_weight')])
                     </div>
                     <div class="col-md-4">
                         <h2>Categories</h2>

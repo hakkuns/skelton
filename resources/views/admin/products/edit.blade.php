@@ -116,7 +116,6 @@
                                             <div class="form-group">
                                                 @include('admin.shared.status-select', ['status' => $product->status])
                                             </div>
-                                            @include('admin.shared.attribute-select', [compact('default_weight')])
                                             <!-- /.box-body -->
                                         </div>
                                         <div class="col-md-4">
