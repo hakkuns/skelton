@@ -100,8 +100,8 @@
             let billingAddressId = $('input[name="billing_address"]:checked').val();
             $('.billing_address').val(billingAddressId);
             $('input[name="billing_address"]').on('change', function () {
-            billingAddressId = $('input[name="billing_address"]:checked').val();
-            $('.billing_address').val(billingAddressId);
+                billingAddressId = $('input[name="billing_address"]:checked').val();
+                $('.billing_address').val(billingAddressId);
             });
 
         });
