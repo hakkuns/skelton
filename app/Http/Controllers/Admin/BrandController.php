@@ -67,7 +67,7 @@ class BrandController extends Controller
      * @param UpdateBrandRequest $request
      * @param $id
      * @return \Illuminate\Http\RedirectResponse
-     * @throws \App\Shop\Brands\Exceptions\UpdateBrandErrorException
+     * @throws \App\rands\Exceptions\UpdateBrandErrorException
      */
     public function update(UpdateBrandRequest $request, $id)
     {

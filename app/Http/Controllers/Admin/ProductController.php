@@ -196,7 +196,7 @@ class ProductController extends Controller
      * @param  int $id
      *
      * @return \Illuminate\Http\Response
-     * @throws \App\Shop\Products\Exceptions\ProductUpdateErrorException
+     * @throws \App\Exceptions\ProductUpdateErrorException
      */
     public function update(UpdateProductRequest $request, int $id)
     {
